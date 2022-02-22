@@ -1,7 +1,7 @@
 Stack = {}
 
 def holdInfoInStack(name : str, age :str , country : str, option: str): 
-    Stack[name.lower()] = [name , age , country , option] #print("Information is holded")
+    Stack[name.lower()] = [name , age , country , option]
     #print("Information is holded")
     
 def divider(n=20):
