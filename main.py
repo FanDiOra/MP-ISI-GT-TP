@@ -1,17 +1,17 @@
 Stack = {}
 
-def holdInfoInStack(name :str, age :str , country : str, option: str): 
+def holdInfoInStack(name :str, age :str , country :str, option :str): 
     Stack[name.lower()] = [name , age , country , option]
     #print("Information is holded")
     
 def divider(n=20):
     print('-' * n)
     
-def displayInfo(name : str, age :str , country : str) -> tuple: 
+def displayInfo(name :str, age :str , country :str) -> tuple: 
     holdInfoInStack(name, age, country, 1)
     return name , age , country
 
-def displayInfoByInput(name : str, age :str , country : str) -> tuple: 
+def displayInfoByInput(name :str, age :str , country :str) -> tuple: 
     holdInfoInStack(name, age, country, 2)
     return displayInfo(name, age, country)
 
